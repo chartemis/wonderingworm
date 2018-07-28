@@ -14,6 +14,8 @@ public abstract class MovingObject : MonoBehaviour {
 
 	public float moveSpeed;
 
+	protected Orientation _orientation = Orientation.DOWN;
+
 	// Use this for initialization
 	protected virtual void Start () {
 			moveTime = 0.075f;
@@ -85,5 +87,14 @@ public abstract class MovingObject : MonoBehaviour {
 	
     protected abstract void OnFinishedMoving();
 
+}
+
+
+public enum Orientation
+{
+	DOWN = 0,
+	UP = 1,
+	LEFT = 2,
+	RIGHT = 3
 }
  

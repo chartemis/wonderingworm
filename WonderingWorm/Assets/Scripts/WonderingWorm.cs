@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class WonderingWorm : MovingObject {
 
+	private Animator _animator;     
+
+
 	// Use this for initialization
 	protected override void Start () {
+		_animator = GetComponent<Animator>();		
+		_orientation = Orientation.RIGHT;
     	base.Start();
 	}
 	
@@ -22,6 +27,18 @@ public class WonderingWorm : MovingObject {
 	
 		if (horizontal != 0 || vertical != 0)
 		{
+			if (horizontal > 0)
+			{
+				_orientation = Orientation.RIGHT;
+			}
+			else if (horizontal < 0)
+			{
+				_orientation = Orientation.LEFT;
+			}
+
+			
+            _animator.SetInteger("Orientation", (int)_orientation);
+
 			RaycastHit2D hit;
 			AttemptMove(horizontal, vertical, out hit);
 		}
