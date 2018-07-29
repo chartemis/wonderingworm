@@ -188,6 +188,16 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44e48f82d1b4cc142951409c3b313778, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &46023472 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1475273240764094, guid: 44e48f82d1b4cc142951409c3b313778,
+    type: 2}
+  m_PrefabInternal: {fileID: 2025617981}
+--- !u!1 &74909832 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1676522093141654, guid: 34a4d5e73110fa84e8bec72fadb7198b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1969234404}
 --- !u!4 &85989033 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4646862596761658, guid: 44e48f82d1b4cc142951409c3b313778,
@@ -728,6 +738,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &621888706 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1415497347225940, guid: 3980e47b2b99e89429e9fbe5d1f8f49c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1336468967}
 --- !u!1 &726480888
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,6 +938,52 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &899200389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 899200391}
+  - component: {fileID: 899200390}
+  m_Layer: 0
+  m_Name: BookSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &899200390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 899200389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba0dcf783358bd46862e31dc3b4f766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnInterval: 3
+  BookSpawns:
+  - {fileID: 46023472}
+  - {fileID: 621888706}
+  - {fileID: 74909832}
+  - {fileID: 1428640564}
+--- !u!4 &899200391
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 899200389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.3483975, y: -0.5049826, z: 0.0234375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &929192002
 GameObject:
   m_ObjectHideFlags: 0
@@ -1326,6 +1387,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44e48f82d1b4cc142951409c3b313778, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1428640564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1255373264731326, guid: 2ad932c0433334d44aaec95ecbcd633f,
+    type: 2}
+  m_PrefabInternal: {fileID: 938558144}
 --- !u!1 &1508784373
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,7 +1666,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4646862596761658, guid: 44e48f82d1b4cc142951409c3b313778, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.47
+      value: -9.99
       objectReference: {fileID: 0}
     - target: {fileID: 4646862596761658, guid: 44e48f82d1b4cc142951409c3b313778, type: 2}
       propertyPath: m_LocalPosition.y
