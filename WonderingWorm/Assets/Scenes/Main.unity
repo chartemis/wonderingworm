@@ -1585,6 +1585,7 @@ MonoBehaviour:
     m_Bits: 256
   moveSpeed: 0
   countText: {fileID: 929192004}
+  audioSlide: {fileID: 0}
   GoodBookGrab: {fileID: 861099466}
   SmutGrab: {fileID: 292831502}
   PointsToWin: 0
@@ -2291,7 +2292,7 @@ SpriteRenderer:
   m_SortingLayerID: -1403388869
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300026, guid: 4f0c4fd4aa3685645849ef59cd512d1c, type: 3}
+  m_Sprite: {fileID: 21300030, guid: 4f0c4fd4aa3685645849ef59cd512d1c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
