@@ -11,7 +11,8 @@ public class BookSpawner : MonoBehaviour {
 
 	public GameObject[] BookSpawns;
 
-    public GameObject ProperEtiquitte;
+    public GameObject ProperEtiquette;
+    public AudioSource ProperEtiquetteSpawn;
 
 	// Use this for initialization
 	void Start () {
@@ -92,7 +93,7 @@ public class BookSpawner : MonoBehaviour {
 	private void SpawnPE () {
         int propetiquettespawn = UnityEngine.Random.Range(0, 10);
 
-        if (propetiquettespawn == 9 & GameManager.instance.gameTimer > 60)
+        if (propetiquettespawn == 9 & GameManager.instance.gameTimer > 30)
         {
 
             int spawnRadius = 15;
@@ -100,7 +101,7 @@ public class BookSpawner : MonoBehaviour {
             double spawnPointX = spawnRadius * System.Math.Cos(spawnPointTheta);
             double spawnPointY = spawnRadius * System.Math.Sin(spawnPointTheta);
 
-            var spawnedBook = Instantiate(ProperEtiquitte, new Vector3((float)spawnPointX, (float)spawnPointY, 0), Quaternion.identity);
+            var spawnedBook = Instantiate(ProperEtiquette, new Vector3((float)spawnPointX, (float)spawnPointY, 0), Quaternion.identity);
 
             double xvar = UnityEngine.Random.Range(-(spawnRadius / 2), (spawnRadius / 2));
             double yvar = UnityEngine.Random.Range(-(spawnRadius / 2), (spawnRadius / 2));
@@ -113,6 +114,8 @@ public class BookSpawner : MonoBehaviour {
 
             float delay = 10; //delay is in seconds
             Destroy(spawnedBook, delay); //destroys object after 10 seconds
+
+            ProperEtiquetteSpawn.Play();
         }
     }
 

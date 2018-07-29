@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 public class WonderingWorm : MovingObject {
 
 	private Animator _animator;
-    public AudioSource audioSlide;
-    public AudioClip GoodBookGrab;
+    public AudioSource GoodBookGrab;
+    public AudioSource SmutGrab;
 	
 	public int PointsToWin;
 	public int Health;
@@ -60,11 +60,6 @@ public class WonderingWorm : MovingObject {
 			if (horizontal != 0 || vertical != 0)
 			{
 				rb2D.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
-				
-				if(!audioSlide.isPlaying)
-				{
-					audioSlide.Play();
-				}
 			}
 		}
     }
@@ -75,11 +70,13 @@ public class WonderingWorm : MovingObject {
 			switch (other.tag) {
 					case "Smut": 
 						TakeDamage();
-						EatBook(other.gameObject, 0);		
+						EatBook(other.gameObject, 0);
+                    SmutGrab.Play();
 						break;		
 					case "PickUp":					    
-						EatBook(other.gameObject);				
-						break;			
+						EatBook(other.gameObject);
+                        GoodBookGrab.Play();
+                    break;			
 					case "Etiquette":					    
 						EatBook(other.gameObject, 5);									
 						break;			
@@ -103,8 +100,8 @@ public class WonderingWorm : MovingObject {
 
 	protected void EatBook(GameObject book, int increment = 1) {
 		Destroy(book);
-		//Add one to the current value of our count variable.
-		GameManager.instance.Points = GameManager.instance.Points + increment;
+        //Add one to the current value of our count variable.
+        GameManager.instance.Points = GameManager.instance.Points + increment;
 		SetCountText();      
 	}
 
