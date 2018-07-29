@@ -25,14 +25,19 @@ public class BookSpawner : MonoBehaviour {
 	
 	private void SpawnBook () {
 
-        int spawnPointIndex = UnityEngine.Random.Range (0, spawnPoints.Count);		
+        //int spawnPointIndex = UnityEngine.Random.Range (0, spawnPoints.Count);		old coordinate generation
         int bookIndex = UnityEngine.Random.Range (0, BookSpawns.Length);
 
-		var spawnedBook = Instantiate (BookSpawns[bookIndex], spawnPoints[spawnPointIndex], Quaternion.identity);
+        int spawnRadius = 15;
+        double spawnPointTheta = UnityEngine.Random.Range(0, 360);
+        double spawnPointX = spawnRadius * System.Math.Cos(spawnPointTheta);
+        double spawnPointY = spawnRadius * System.Math.Sin(spawnPointTheta);
+
+        var spawnedBook = Instantiate (BookSpawns[bookIndex], new Vector3((float)spawnPointX, (float)spawnPointY), Quaternion.identity);
 
 		var rigidBody = spawnedBook.GetComponent<Rigidbody2D>();
 
-		rigidBody.velocity = new Vector2(3, -1);
+		rigidBody.velocity = new Vector2((float)-spawnPointX / 3, (float)-spawnPointY / 3);
 
 
 		if (bookIndex == (int)BookTypes.SMUT) {
@@ -50,11 +55,17 @@ public class BookSpawner : MonoBehaviour {
 
         if (propetiquettespawn == 9)
         {
-            var spawnedBook = Instantiate(ProperEtiquitte, new Vector3(7, 7, 0), Quaternion.identity);
+
+            int spawnRadius = 15;
+            double spawnPointTheta = UnityEngine.Random.Range(0, 360);
+            double spawnPointX = spawnRadius * System.Math.Cos(spawnPointTheta);
+            double spawnPointY = spawnRadius * System.Math.Sin(spawnPointTheta);
+
+            var spawnedBook = Instantiate(ProperEtiquitte, new Vector3((float)spawnPointX, (float)spawnPointY, 0), Quaternion.identity);
 
             var rigidBody = spawnedBook.GetComponent<Rigidbody2D>();
 
-            rigidBody.velocity = new Vector2(-.5f, -3);
+            rigidBody.velocity = new Vector2(-(float)spawnPointX / 2, -(float)spawnPointY / 2);
 
 			spawnedBook.tag = "Etiquette";
 
