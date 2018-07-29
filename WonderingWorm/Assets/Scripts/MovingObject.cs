@@ -9,8 +9,6 @@ public abstract class MovingObject : MonoBehaviour {
     protected Rigidbody2D rb2D;
     public LayerMask blockingLayer;         //Layer on which collision will be checked.
 
-    protected int count;
-
     public float moveTime;         //Time it will take object to move, in seconds.
 
     public float moveSpeed;
@@ -18,6 +16,9 @@ public abstract class MovingObject : MonoBehaviour {
     public Text countText;
 
     protected Orientation _orientation = Orientation.DOWN;
+
+    
+	protected bool _pauseObject;
 
     // Use this for initialization
     protected virtual void Start() {
@@ -30,10 +31,18 @@ public abstract class MovingObject : MonoBehaviour {
         //Get a component reference to this object's Rigidbody2D
         rb2D = GetComponent<Rigidbody2D>();
 
-        //Initialize count to zero.
-        count = 0;
-        
+        _pauseObject = false;
+
         SetCountText();
+    }
+
+    protected void PauseObject() {
+        rb2D.velocity = Vector2.zero;
+        _pauseObject = true;
+    }
+
+    protected void UnpauseObject() {
+        _pauseObject = false;
     }
 
 	protected virtual void Update() {
@@ -43,14 +52,6 @@ public abstract class MovingObject : MonoBehaviour {
     // Update is called once per frame
     protected virtual void FixedUpdate()
     {		
-		float horizontal = Input.GetAxisRaw("Horizontal");		
-		float vertical = Input.GetAxisRaw("Vertical");
-
-
-        if (horizontal != 0 || vertical != 0) {
-		    rb2D.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
-        }
-
     }
 
     protected virtual void OnTriggerEnter2D(Collider2D other)
@@ -60,7 +61,7 @@ public abstract class MovingObject : MonoBehaviour {
 
     protected void SetCountText()
     {
-        countText.text = "Count: " + count.ToString();
+        countText.text = "Count: " + GameManager.instance.Points.ToString();
     }
 	
     protected abstract void OnFinishedMoving();
