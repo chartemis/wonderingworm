@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class WonderingWorm : MovingObject {
 
-	private Animator _animator;     
+	private Animator _animator;
+    public AudioSource audioSlide;
 
 
 	// Use this for initialization
 	protected override void Start () {
-		_animator = GetComponent<Animator>();		
-		_orientation = Orientation.LEFT;
+		_animator = GetComponent<Animator>();
+        _orientation = Orientation.LEFT;
     	base.Start();
 	}
 	
@@ -41,7 +42,20 @@ public class WonderingWorm : MovingObject {
 		}
 	}
 
-	 protected override void OnFinishedMoving()
+    protected override void FixedUpdate()
+    {
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+
+        if (horizontal != 0 || vertical != 0)
+        {
+            rb2D.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
+            audioSlide.Play();
+        }
+    }
+
+
+     protected override void OnFinishedMoving()
 	{
 	}
 
