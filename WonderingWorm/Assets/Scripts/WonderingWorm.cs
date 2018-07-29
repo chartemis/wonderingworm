@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,10 +10,12 @@ public class WonderingWorm : MovingObject {
     public AudioClip GoodBookGrab;
 
 
+	public int Health;
 	// Use this for initialization
 	protected override void Start () {
 		_animator = GetComponent<Animator>();
         _orientation = Orientation.LEFT;
+		Health = 3;
     	base.Start();
 	}
 	
@@ -59,20 +62,37 @@ public class WonderingWorm : MovingObject {
         }
     }
 
-    protected virtual void OnTriggerEnter2D(Collider2D other)
+    protected override void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("PickUp"))
-        {
-            //other.gameObject.SetActive(false);
-            Destroy(other.gameObject);
-            //Add one to the current value of our count variable.
-            count = count + 1;
-            SetCountText();
-
-            
-        }
+		switch (other.tag) {
+				case "Smut": 
+					TakeDamage();
+					EatBook(other.gameObject);		
+					break;		
+				case "PickUp":					    
+					EatBook(other.gameObject);				
+					break;			
+				case "Etiquette":					    
+					EatBook(other.gameObject, 5);									
+					break;			
+		}  
     }
 
+	private void TakeDamage() {
+		Health--;
+
+		if (Health <= 0) {
+			// game over
+
+		}
+	}
+
+	protected void EatBook(GameObject book, int increment = 1) {
+		Destroy(book);
+		//Add one to the current value of our count variable.
+		count = count + increment;
+		SetCountText();      
+	}
 
     protected override void OnFinishedMoving()
 	{

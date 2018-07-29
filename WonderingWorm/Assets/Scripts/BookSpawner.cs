@@ -32,7 +32,22 @@ public class BookSpawner : MonoBehaviour {
 
 		rigidBody.velocity = new Vector2(3, -1);
 
+
+		if (bookIndex == (int)BookTypes.SMUT) {
+			spawnedBook.tag = "Smut";
+		}
+
         float delay = 10; //delay is in seconds
         Destroy(spawnedBook, delay); //destroys object after 10 seconds
     }
+
+}
+
+public enum BookTypes
+{
+	MATH = 0,
+	ART = 1,
+	SCIENCE = 2,
+	SMUT = 3,
+	ETIQUETTE = 4
 }

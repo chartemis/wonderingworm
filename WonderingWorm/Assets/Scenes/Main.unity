@@ -718,12 +718,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba0dcf783358bd46862e31dc3b4f766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnInterval: 3
+  SpawnInterval: 0.5
   BookSpawns:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 606392297}
+  - {fileID: 1167125749}
+  - {fileID: 2054321820}
+  - {fileID: 653713128}
 --- !u!4 &527773882
 Transform:
   m_ObjectHideFlags: 0
@@ -737,6 +737,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &606392297 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1255373264731326, guid: 2ad932c0433334d44aaec95ecbcd633f,
+    type: 2}
+  m_PrefabInternal: {fileID: 184710083}
 --- !u!1 &619941434
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,6 +770,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &653713128 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1676522093141654, guid: 34a4d5e73110fa84e8bec72fadb7198b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1423954695}
 --- !u!1 &703465378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,6 +1084,7 @@ MonoBehaviour:
   countText: {fileID: 929192004}
   audioSlide: {fileID: 861099464}
   GoodBookGrab: {fileID: 0}
+  Health: 0
 --- !u!95 &861099463
 Animator:
   serializedVersion: 3
@@ -1589,6 +1600,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1136568407}
   m_CullTransparentMesh: 0
+--- !u!1 &1167125749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1415497347225940, guid: 3980e47b2b99e89429e9fbe5d1f8f49c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1515664940}
 --- !u!1 &1169908959
 GameObject:
   m_ObjectHideFlags: 0
@@ -2107,6 +2123,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1729524764}
   m_CullTransparentMesh: 0
+--- !u!1 &2054321820 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1475273240764094, guid: 44e48f82d1b4cc142951409c3b313778,
+    type: 2}
+  m_PrefabInternal: {fileID: 2102228931}
 --- !u!1001 &2102228931
 Prefab:
   m_ObjectHideFlags: 0
