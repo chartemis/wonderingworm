@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour {
 
+    public AudioSource gameStart;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -17,6 +19,7 @@ public class StartGame : MonoBehaviour {
 
 	void OnMouseUp()
 	{
+        gameStart.Play();
 		SceneManager.LoadScene("Main", LoadSceneMode.Single);
 	}
 }
