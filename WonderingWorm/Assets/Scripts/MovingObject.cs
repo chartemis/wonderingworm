@@ -41,7 +41,7 @@ public abstract class MovingObject : MonoBehaviour {
 	}
 
     // Update is called once per frame
-    void FixedUpdate()
+    protected virtual void FixedUpdate()
     {		
 		float horizontal = Input.GetAxisRaw("Horizontal");		
 		float vertical = Input.GetAxisRaw("Vertical");
@@ -53,7 +53,7 @@ public abstract class MovingObject : MonoBehaviour {
 
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    protected virtual void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("PickUp"))
         {

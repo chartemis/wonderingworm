@@ -43,7 +43,7 @@ public class WonderingWorm : MovingObject {
 		}
 	}
 
-    protected void FixedUpdate()
+    protected override void FixedUpdate()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
