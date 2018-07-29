@@ -733,12 +733,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba0dcf783358bd46862e31dc3b4f766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnInterval: 3
+  SpawnInterval: 2
   BookSpawns:
   - {fileID: 2102228932}
-  - {fileID: 1423954696}
-  - {fileID: 184710084}
   - {fileID: 1515664941}
+  - {fileID: 184710084}
+  - {fileID: 1423954696}
+  - {fileID: 1423954696}
   ProperEtiquitte: {fileID: 733840128}
 --- !u!4 &527773882
 Transform:
@@ -1198,6 +1199,7 @@ MonoBehaviour:
   countText: {fileID: 929192004}
   audioSlide: {fileID: 861099464}
   GoodBookGrab: {fileID: 0}
+  Health: 0
 --- !u!95 &861099463
 Animator:
   serializedVersion: 3
