@@ -55,14 +55,7 @@ public abstract class MovingObject : MonoBehaviour {
 
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("PickUp"))
-        {
-            other.gameObject.SetActive(false);
-
-            //Add one to the current value of our count variable.
-            count = count + 1;
-            SetCountText();
-        }
+        
     }
 
     protected void SetCountText()
