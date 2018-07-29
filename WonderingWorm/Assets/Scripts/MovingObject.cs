@@ -9,22 +9,18 @@ public abstract class MovingObject : MonoBehaviour {
     protected Rigidbody2D rb2D;
     public LayerMask blockingLayer;         //Layer on which collision will be checked.
 
-    public float moveTime;         //Time it will take object to move, in seconds.
 
-    public float moveSpeed;
+    public float moveSpeed = 2f;
 
     public Text countText;
 
-    protected Orientation _orientation = Orientation.DOWN;
+    protected Orientation _orientation = Orientation.RIGHT;
 
     
 	protected bool _pauseObject;
 
     // Use this for initialization
     protected virtual void Start() {
-        moveTime = 0.075f;
-        moveSpeed = 2f;
-        
         //Get a component reference to this object's BoxCollider2D
         boxCollider = GetComponent<BoxCollider2D>();
 

@@ -1360,13 +1360,15 @@ MonoBehaviour:
   blockingLayer:
     serializedVersion: 2
     m_Bits: 256
-  moveTime: 0
   moveSpeed: 0
   countText: {fileID: 929192004}
   audioSlide: {fileID: 861099464}
   GoodBookGrab: {fileID: 0}
   PointsToWin: 0
   Health: 0
+  Level1Speed: 2
+  Level2Speed: 4
+  Level3Speed: 6
 --- !u!95 &861099463
 Animator:
   serializedVersion: 3

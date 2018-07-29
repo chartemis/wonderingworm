@@ -9,17 +9,28 @@ public class WonderingWorm : MovingObject {
 	private Animator _animator;
     public AudioSource audioSlide;
     public AudioClip GoodBookGrab;
+	private BoxCollider2D _boxCollider;
 	
 	public int PointsToWin;
 	public int Health;
 
+	public float Level1Speed = 2f;
+	public float Level2Speed = 4f;
+	public float Level3Speed = 6f;
+	
+	private int _level;
+
 	// Use this for initialization
 	protected override void Start () {
 		_animator = GetComponent<Animator>();
+		_boxCollider = GetComponent<BoxCollider2D>();
         _orientation = Orientation.LEFT;
 		Health = 3;
 		PointsToWin = 100;
 		_pauseObject = false;
+		moveSpeed = Level1Speed;
+		_level = 1;
+				
     	base.Start();
 	}
 	
@@ -41,9 +52,7 @@ public class WonderingWorm : MovingObject {
 				else if (horizontal < 0)
 				{
 					_orientation = Orientation.LEFT;
-				}
-
-				
+				}				
 				_animator.SetInteger("Orientation", (int)_orientation);
 			} else {
 				rb2D.velocity = Vector2.zero;
@@ -81,6 +90,7 @@ public class WonderingWorm : MovingObject {
 						EatBook(other.gameObject);				
 						break;			
 					case "Etiquette":					    
+						UpgradeWorm();
 						EatBook(other.gameObject, 5);									
 						break;			
 			}  
@@ -99,6 +109,23 @@ public class WonderingWorm : MovingObject {
 			// game over
 			TriggerLoss();
 		}
+	}
+
+	protected void UpgradeWorm() {
+		switch (_level) {
+			case 1:
+				_level++;
+				moveSpeed = Level2Speed;
+				_boxCollider.size = new Vector3(.83f, .92f, 0);
+				break;
+			case 2:
+				_level++;
+				moveSpeed = Level3Speed;
+				_boxCollider.size = new Vector3(1.05f, 1.05f, 0);
+				break;
+		}
+		
+		_animator.SetInteger("Level", _level);
 	}
 
 	protected void EatBook(GameObject book, int increment = 1) {
