@@ -11,6 +11,8 @@ public class BookSpawner : MonoBehaviour {
 
 	public GameObject[] BookSpawns;
 
+    public GameObject ProperEtiquitte;
+
 	// Use this for initialization
 	void Start () {
 		// SpawnInterval = 3f;
@@ -25,6 +27,7 @@ public class BookSpawner : MonoBehaviour {
 
         int spawnPointIndex = UnityEngine.Random.Range (0, spawnPoints.Count);		
         int bookIndex = UnityEngine.Random.Range (0, BookSpawns.Length);
+        int propetiquettespawn = UnityEngine.Random.Range(0, 10);
 
 		var spawnedBook = Instantiate (BookSpawns[bookIndex], spawnPoints[spawnPointIndex], Quaternion.identity);
 
@@ -34,5 +37,23 @@ public class BookSpawner : MonoBehaviour {
 
         float delay = 10; //delay is in seconds
         Destroy(spawnedBook, delay); //destroys object after 10 seconds
+    }
+
+    private void SpawnPE () {
+
+        int spawnPointIndex = UnityEngine.Random.Range(0, spawnPoints.Count);
+        int propetiquettespawn = UnityEngine.Random.Range(0, 10);
+
+        if (propetiquettespawn == 10)
+        {
+            var spawnedBook = Instantiate(ProperEtiquitte, spawnPoints[spawnPointIndex], Quaternion.identity);
+
+            var rigidBody = spawnedBook.GetComponent<Rigidbody2D>();
+
+            rigidBody.velocity = new Vector2(10, -1);
+
+            float delay = 10; //delay is in seconds
+            Destroy(spawnedBook, delay); //destroys object after 10 seconds
+        }
     }
 }
