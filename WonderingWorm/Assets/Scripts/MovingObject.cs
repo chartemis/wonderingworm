@@ -9,8 +9,6 @@ public abstract class MovingObject : MonoBehaviour {
     protected Rigidbody2D rb2D;
     public LayerMask blockingLayer;         //Layer on which collision will be checked.
 
-    protected int count;
-
     public float moveTime;         //Time it will take object to move, in seconds.
 
     public float moveSpeed;
@@ -33,9 +31,6 @@ public abstract class MovingObject : MonoBehaviour {
         //Get a component reference to this object's Rigidbody2D
         rb2D = GetComponent<Rigidbody2D>();
 
-        //Initialize count to zero.
-        count = 0;
-        
         _pauseObject = false;
 
         SetCountText();
@@ -66,7 +61,7 @@ public abstract class MovingObject : MonoBehaviour {
 
     protected void SetCountText()
     {
-        countText.text = "Count: " + count.ToString();
+        countText.text = "Count: " + GameManager.instance.Points.ToString();
     }
 	
     protected abstract void OnFinishedMoving();

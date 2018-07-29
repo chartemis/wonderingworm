@@ -144,7 +144,7 @@ Transform:
   - {fileID: 184710085}
   - {fileID: 1515664942}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &173219983
 GameObject:
@@ -234,7 +234,7 @@ RectTransform:
   - {fileID: 929192003}
   - {fileID: 1729524765}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -324,7 +324,7 @@ Transform:
   m_Children:
   - {fileID: 189562916}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &189562914
 GameObject:
@@ -623,7 +623,7 @@ Transform:
   - {fileID: 1508784374}
   - {fileID: 323962715}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &323962714
 GameObject:
@@ -918,12 +918,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba0dcf783358bd46862e31dc3b4f766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnInterval: 2
+  SpawnInterval: 0.2
   BookSpawns:
   - {fileID: 2102228932}
   - {fileID: 1515664941}
   - {fileID: 184710084}
-  - {fileID: 1423954696}
   - {fileID: 1423954696}
   ProperEtiquitte: {fileID: 733840128}
 --- !u!4 &527773882
@@ -937,7 +936,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &642944789 stripped
 Transform:
@@ -1333,6 +1332,7 @@ MonoBehaviour:
   countText: {fileID: 929192004}
   audioSlide: {fileID: 861099464}
   GoodBookGrab: {fileID: 0}
+  PointsToWin: 0
   Health: 0
 --- !u!95 &861099463
 Animator:
@@ -1697,7 +1697,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1070400110
 GameObject:
@@ -2802,43 +2802,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4646862596761658, guid: 44e48f82d1b4cc142951409c3b313778,
     type: 2}
   m_PrefabInternal: {fileID: 2102228931}
---- !u!1 &2112388442
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2112388444}
-  - component: {fileID: 2112388443}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2112388443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2112388442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc52f3bb7653ae54bb3cb4d310871d3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &2112388444
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2112388442}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.56166875, y: 0.2391182, z: -0.06896091}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

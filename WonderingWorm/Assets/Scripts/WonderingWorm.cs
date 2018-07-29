@@ -85,7 +85,7 @@ public class WonderingWorm : MovingObject {
 						break;			
 			}  
 
-			if (count >= PointsToWin) {
+			if (GameManager.instance.Points >= PointsToWin) {
 				// win
 				TriggerWin();
 			}
@@ -104,7 +104,7 @@ public class WonderingWorm : MovingObject {
 	protected void EatBook(GameObject book, int increment = 1) {
 		Destroy(book);
 		//Add one to the current value of our count variable.
-		count = count + increment;
+		GameManager.instance.Points = GameManager.instance.Points + increment;
 		SetCountText();      
 	}
 
@@ -119,7 +119,7 @@ public class WonderingWorm : MovingObject {
 	protected void TriggerLoss(){
 		PauseObject();
 
-		
+
 		// SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
 
 	}
