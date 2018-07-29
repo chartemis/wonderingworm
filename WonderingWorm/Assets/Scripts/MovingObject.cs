@@ -41,7 +41,7 @@ public abstract class MovingObject : MonoBehaviour {
 	}
 
     // Update is called once per frame
-    void FixedUpdate()
+    protected virtual void FixedUpdate()
     {		
 		float horizontal = Input.GetAxisRaw("Horizontal");		
 		float vertical = Input.GetAxisRaw("Vertical");
