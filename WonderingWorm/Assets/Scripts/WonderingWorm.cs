@@ -36,6 +36,8 @@ public class WonderingWorm : MovingObject {
 
 			
             _animator.SetInteger("Orientation", (int)_orientation);
+		} else {
+			rb2D.velocity = Vector2.zero;
 		}
 	}
 

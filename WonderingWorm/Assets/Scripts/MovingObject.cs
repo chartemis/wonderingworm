@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class MovingObject : MonoBehaviour {
 
@@ -14,21 +15,25 @@ public abstract class MovingObject : MonoBehaviour {
 
     public float moveSpeed;
 
-    protected Orientation _orientation = Orientation.LEFT;
+    public Text countText;
+
+    protected Orientation _orientation = Orientation.DOWN;
 
     // Use this for initialization
     protected virtual void Start() {
         moveTime = 0.075f;
         moveSpeed = 2f;
-
+        
         //Get a component reference to this object's BoxCollider2D
         boxCollider = GetComponent<BoxCollider2D>();
 
         //Get a component reference to this object's Rigidbody2D
         rb2D = GetComponent<Rigidbody2D>();
 
-        //Sets counter
+        //Initialize count to zero.
         count = 0;
+        
+        SetCountText();
     }
 
 	protected virtual void Update() {
@@ -53,7 +58,16 @@ public abstract class MovingObject : MonoBehaviour {
         if (other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
+
+            //Add one to the current value of our count variable.
+            count = count + 1;
+            SetCountText();
         }
+    }
+
+    void SetCountText()
+    {
+        countText.text = "Count: " + count.ToString();
     }
 	
     protected abstract void OnFinishedMoving();
