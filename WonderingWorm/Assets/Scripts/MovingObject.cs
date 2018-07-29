@@ -19,6 +19,9 @@ public abstract class MovingObject : MonoBehaviour {
 
     protected Orientation _orientation = Orientation.DOWN;
 
+    
+	protected bool _pauseObject;
+
     // Use this for initialization
     protected virtual void Start() {
         moveTime = 0.075f;
@@ -33,7 +36,18 @@ public abstract class MovingObject : MonoBehaviour {
         //Initialize count to zero.
         count = 0;
         
+        _pauseObject = false;
+
         SetCountText();
+    }
+
+    protected void PauseObject() {
+        rb2D.velocity = Vector2.zero;
+        _pauseObject = true;
+    }
+
+    protected void UnpauseObject() {
+        _pauseObject = false;
     }
 
 	protected virtual void Update() {
@@ -43,14 +57,6 @@ public abstract class MovingObject : MonoBehaviour {
     // Update is called once per frame
     protected virtual void FixedUpdate()
     {		
-		float horizontal = Input.GetAxisRaw("Horizontal");		
-		float vertical = Input.GetAxisRaw("Vertical");
-
-
-        if (horizontal != 0 || vertical != 0) {
-		    rb2D.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
-        }
-
     }
 
     protected virtual void OnTriggerEnter2D(Collider2D other)
