@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class MovingObject : MonoBehaviour {
 
@@ -15,6 +16,8 @@ public abstract class MovingObject : MonoBehaviour {
 
     public float moveSpeed;
 
+    public Text countText;
+
     protected Orientation _orientation = Orientation.DOWN;
 
     // Use this for initialization
@@ -28,8 +31,9 @@ public abstract class MovingObject : MonoBehaviour {
         //Get a component reference to this object's Rigidbody2D
         rb2D = GetComponent<Rigidbody2D>();
 
-        //Sets counter
+        //Initialize count to zero.
         count = 0;
+        SetCountText ();
 
         //By storing the reciprocal of the move time we can use it by multiplying instead of dividing, this is more efficient.
         inverseMoveTime = 1f / moveTime;
@@ -46,7 +50,16 @@ public abstract class MovingObject : MonoBehaviour {
         if (other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
+
+            //Add one to the current value of our count variable.
+            count = count + 1;
+            SetCountText();
         }
+    }
+
+    void SetCountText()
+    {
+        countText.text = "Count: " + count.ToString();
     }
 
     //Move returns true if it is able to move and false if not. 
