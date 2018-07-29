@@ -31,5 +31,8 @@ public class BookSpawner : MonoBehaviour {
 		var rigidBody = spawnedBook.GetComponent<Rigidbody2D>();
 
 		rigidBody.velocity = new Vector2(3, -1);
-	}
+
+        float delay = 10; //delay is in seconds
+        Destroy(spawnedBook, delay); //destroys object after 10 seconds
+    }
 }

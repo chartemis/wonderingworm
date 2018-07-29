@@ -9,7 +9,7 @@ public abstract class MovingObject : MonoBehaviour {
     protected Rigidbody2D rb2D;
     public LayerMask blockingLayer;         //Layer on which collision will be checked.
 
-    private int count;
+    protected int count;
 
     public float moveTime;         //Time it will take object to move, in seconds.
 
@@ -65,7 +65,7 @@ public abstract class MovingObject : MonoBehaviour {
         }
     }
 
-    void SetCountText()
+    protected void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
     }

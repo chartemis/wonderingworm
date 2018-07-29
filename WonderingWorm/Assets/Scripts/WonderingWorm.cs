@@ -6,7 +6,7 @@ public class WonderingWorm : MovingObject {
 
 	private Animator _animator;
     public AudioSource audioSlide;
-    public AudioClip clipSlide;
+    public AudioClip GoodBookGrab;
 
 
 	// Use this for initialization
@@ -59,8 +59,22 @@ public class WonderingWorm : MovingObject {
         }
     }
 
+    protected virtual void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("PickUp"))
+        {
+            //other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
+            //Add one to the current value of our count variable.
+            count = count + 1;
+            SetCountText();
 
-     protected override void OnFinishedMoving()
+            
+        }
+    }
+
+
+    protected override void OnFinishedMoving()
 	{
 	}
 
