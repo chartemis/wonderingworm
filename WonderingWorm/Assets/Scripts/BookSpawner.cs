@@ -15,13 +15,35 @@ public class BookSpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		// SpawnInterval = 3f;
-		// _lastSpawn = DateTime.Now;
+		SpawnInterval = 3f;
+		//_lastSpawn = DateTime.Now;
 
 		InvokeRepeating ("SpawnBook", SpawnInterval, SpawnInterval);
-		spawnPoints = new List<Vector2>();
-		spawnPoints.Add(new Vector2(-10f, 2.5f));
+		//spawnPoints = new List<Vector2>();
+		//spawnPoints.Add(new Vector2(-10f, 2.5f));
 	}
+
+    private void UpdateSpawnInterval () {
+
+        //setting the tiered book spawn interval based on current points
+        if (GameManager.instance.Points <= 15)
+        {
+            SpawnInterval = 1f;
+        }
+
+        if (GameManager.instance.Points > 10 & GameManager.instance.Points <= 45)
+        {
+            SpawnInterval = 2f;
+        }
+
+        if (GameManager.instance.Points > 45)
+        {
+            SpawnInterval = 3f;
+        }
+
+        InvokeRepeating("SpawnBook", SpawnInterval, SpawnInterval);
+
+    }
 	
 	private void SpawnBook () {
 
@@ -40,23 +62,37 @@ public class BookSpawner : MonoBehaviour {
         double xvar = UnityEngine.Random.Range(-(spawnRadius / 2), (spawnRadius / 2));
         double yvar = UnityEngine.Random.Range(-(spawnRadius / 2), (spawnRadius / 2));
 
-        rigidBody.velocity = new Vector2((float)(-spawnPointX + xvar) / 3, (float)(-spawnPointY + yvar) / 3);
+        //setting the tiered book speed based on current points
+        if(GameManager.instance.Points <= 15)
+        {
+            rigidBody.velocity = new Vector2((float)(-spawnPointX + xvar) / 5, (float)(-spawnPointY + yvar) / 5);
+        }
+
+        if(GameManager.instance.Points > 10 & GameManager.instance.Points <= 45)
+        {
+            rigidBody.velocity = new Vector2((float)(-spawnPointX + xvar) / 4, (float)(-spawnPointY + yvar) / 4);
+        }
+
+        if(GameManager.instance.Points > 45)
+        {
+            rigidBody.velocity = new Vector2((float)(-spawnPointX + xvar) / 3, (float)(-spawnPointY + yvar) / 3);
+        }
 
 
-		if (bookIndex == (int)BookTypes.SMUT) {
+        if (bookIndex == (int)BookTypes.SMUT) {
 			spawnedBook.tag = "Smut";
 		}
 
 		SpawnPE();
 
-        float delay = 10; //delay is in seconds
-        Destroy(spawnedBook, delay); //destroys object after 10 seconds
+        float delay = 15; //delay is in seconds
+        Destroy(spawnedBook, delay); //destroys object after 15 seconds
     }
 
 	private void SpawnPE () {
         int propetiquettespawn = UnityEngine.Random.Range(0, 10);
 
-        if (propetiquettespawn == 9)
+        if (propetiquettespawn == 9 & GameManager.instance.gameTimer > 60)
         {
 
             int spawnRadius = 15;

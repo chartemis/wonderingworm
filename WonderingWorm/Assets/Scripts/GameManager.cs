@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour {
 	
     public int Points;
 	public bool GameOver;
+    public float gameTimer;
 
 
 	// Use this for initialization
@@ -18,7 +19,7 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        gameTimer += Time.deltaTime;
 	}
 
 	void Awake()
