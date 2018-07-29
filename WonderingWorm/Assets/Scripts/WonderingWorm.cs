@@ -6,6 +6,7 @@ public class WonderingWorm : MovingObject {
 
 	private Animator _animator;
     public AudioSource audioSlide;
+    public AudioClip clipSlide;
 
 
 	// Use this for initialization
@@ -42,7 +43,7 @@ public class WonderingWorm : MovingObject {
 		}
 	}
 
-    protected override void FixedUpdate()
+    protected void FixedUpdate()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
@@ -50,7 +51,11 @@ public class WonderingWorm : MovingObject {
         if (horizontal != 0 || vertical != 0)
         {
             rb2D.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
-            audioSlide.Play();
+            
+            if(!audioSlide.isPlaying)
+            {
+                audioSlide.Play();
+            }
         }
     }
 
