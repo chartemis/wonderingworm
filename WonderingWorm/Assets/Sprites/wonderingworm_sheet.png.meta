@@ -33,6 +33,20 @@ TextureImporter:
     21300056: wonderingworm_sheet_28
     21300058: wonderingworm_sheet_29
     21300060: wonderingworm_sheet_30
+    21300062: wonderingworm_sheet_31
+    21300064: wonderingworm_sheet_32
+    21300066: wonderingworm_sheet_33
+    21300068: wonderingworm_sheet_34
+    21300070: wonderingworm_sheet_35
+    21300072: wonderingworm_sheet_36
+    21300074: wonderingworm_sheet_37
+    21300076: wonderingworm_sheet_38
+    21300078: wonderingworm_sheet_39
+    21300080: wonderingworm_sheet_40
+    21300082: wonderingworm_sheet_41
+    21300084: wonderingworm_sheet_42
+    21300086: wonderingworm_sheet_43
+    21300088: wonderingworm_sheet_44
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -140,7 +154,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7225341fce2cc85478ba4dff2c0d438b
+      spriteID: f17e80dd5bd9f574db30f95e5ef1ff0d
       vertices: []
       indices: 
       edges: []
@@ -160,7 +174,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b5cb9491f59fa9499bf1bf28cb924b0
+      spriteID: 39814b0f4706a5440b187c7cbceda6e5
       vertices: []
       indices: 
       edges: []
@@ -180,7 +194,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e8b13b3c8f4ea645b53b5cd54963bc4
+      spriteID: 8c791e067f33036468f53001d40a4539
       vertices: []
       indices: 
       edges: []
@@ -200,7 +214,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a385e7febe2aa64dbdc112a340c18b0
+      spriteID: 2d9fe2449cc61f148955f6452ca69b59
       vertices: []
       indices: 
       edges: []
@@ -220,7 +234,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8770fb391804e23479e510c8e88b6c70
+      spriteID: 0a6d0a35b7a20fa4f9cc55887575994e
       vertices: []
       indices: 
       edges: []
@@ -240,13 +254,53 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b19deabbe43409041b202159a7f71cbc
+      spriteID: a9c1d97d1ef1cc94992fb94badf20bd9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: wonderingworm_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 4992
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d95884a47760944ad19a5da1fcff87
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wonderingworm_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 4992
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde5b361592e0814c8c606d4e5a2b993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wonderingworm_sheet_8
       rect:
         serializedVersion: 2
         x: 4736
@@ -260,13 +314,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae7db04c2735f444896267349572e3ce
+      spriteID: 9de1196e2e9b00247ad7139af2ba1b90
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_7
+      name: wonderingworm_sheet_9
       rect:
         serializedVersion: 2
         x: 4864
@@ -280,13 +334,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 491d189600ea59a43a3c03235b46a14b
+      spriteID: ef2e618759b77d14297e1db2c107ac41
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_8
+      name: wonderingworm_sheet_10
       rect:
         serializedVersion: 2
         x: 0
@@ -300,13 +354,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad549022b6b7deb40a0363e2e68371e9
+      spriteID: 40a6c7bfa7105d34898fa7cdde242412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_9
+      name: wonderingworm_sheet_11
       rect:
         serializedVersion: 2
         x: 128
@@ -320,13 +374,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7019f3c9e57c80549b78eec01cf26c5b
+      spriteID: c122d96b3da539d4bab972d25139394d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_10
+      name: wonderingworm_sheet_12
       rect:
         serializedVersion: 2
         x: 256
@@ -340,13 +394,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 382a19d24ed1044498db686e8821323f
+      spriteID: 254fd3dc10920d94c86c61c57f3af8c1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_11
+      name: wonderingworm_sheet_13
       rect:
         serializedVersion: 2
         x: 384
@@ -360,13 +414,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcdf325e81b79144bb4a17c52e6324f5
+      spriteID: 238f7d5a4c48ff54aa6323ad5cf2d98e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_12
+      name: wonderingworm_sheet_14
       rect:
         serializedVersion: 2
         x: 640
@@ -380,13 +434,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bdd0152e3c96f740bf27728caa17f0d
+      spriteID: 3cdb7c3f97901c346b962b9f66c12b31
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_13
+      name: wonderingworm_sheet_15
       rect:
         serializedVersion: 2
         x: 768
@@ -400,13 +454,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11fef694a846d5048abfbadb14ce58a8
+      spriteID: 5e1a4bb581593db4f86ec00af1b16e34
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_14
+      name: wonderingworm_sheet_16
       rect:
         serializedVersion: 2
         x: 896
@@ -420,47 +474,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a056879f669f5f6429d0a93ea4cd5110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wonderingworm_sheet_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 4736
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb2d7dcd701fb894cbba894fdb0ec945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wonderingworm_sheet_16
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 4736
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8bba7969d2fc1e42802c7c7eee2704e
+      spriteID: 07c2dfa88713e8c48bb906d9e6b26b67
       vertices: []
       indices: 
       edges: []
@@ -469,8 +483,8 @@ TextureImporter:
       name: wonderingworm_sheet_17
       rect:
         serializedVersion: 2
-        x: 256
-        y: 4736
+        x: 1024
+        y: 4864
         width: 128
         height: 128
       alignment: 0
@@ -480,7 +494,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ab00224ecf83ce47a3b401105e7ac93
+      spriteID: ab6d3c92f5bfef045837fb244f23cf45
       vertices: []
       indices: 
       edges: []
@@ -489,8 +503,8 @@ TextureImporter:
       name: wonderingworm_sheet_18
       rect:
         serializedVersion: 2
-        x: 384
-        y: 4736
+        x: 1152
+        y: 4864
         width: 128
         height: 128
       alignment: 0
@@ -500,7 +514,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 546ff0c45e46c56419d25296ad9333e8
+      spriteID: a6dc9108a9111344481c900afdaaf3f7
       vertices: []
       indices: 
       edges: []
@@ -509,10 +523,10 @@ TextureImporter:
       name: wonderingworm_sheet_19
       rect:
         serializedVersion: 2
-        x: 512
+        x: 60
         y: 4736
-        width: 128
-        height: 128
+        width: 68
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -520,7 +534,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c0840f952c890e4ababaa3775eb0341
+      spriteID: 9680bd3de445a9a41bad664e30d1f810
       vertices: []
       indices: 
       edges: []
@@ -529,7 +543,107 @@ TextureImporter:
       name: wonderingworm_sheet_20
       rect:
         serializedVersion: 2
-        x: 640
+        x: 203
+        y: 4736
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf2914180064174cb2cf2614d7b402d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wonderingworm_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 4736
+        width: 108
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5af2a1ead1fde7488f8e4732f0d9df5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wonderingworm_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 4743
+        width: 69
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83cb1f0bc0aaa414ea353346ef11c3d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wonderingworm_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 4745
+        width: 112
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28806118f36c6b48a89b50958ea670f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wonderingworm_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 4736
+        width: 69
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aea7931d9f0eb44b98f9a63dc4671e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wonderingworm_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1152
         y: 4736
         width: 128
         height: 128
@@ -540,19 +654,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbaa3c2f0df596848b65b3880a0c6f01
+      spriteID: 64e96fafae141824eb0255811e1d7b0e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_21
+      name: wonderingworm_sheet_26
       rect:
         serializedVersion: 2
-        x: 0
+        x: 64
         y: 4608
-        width: 128
-        height: 128
+        width: 64
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -560,19 +674,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 354d13c39b94fc24f95e8e876b27906e
+      spriteID: 1d04024130dc8f144af66be1da9a37dd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_22
+      name: wonderingworm_sheet_27
       rect:
         serializedVersion: 2
-        x: 128
+        x: 162
         y: 4608
-        width: 128
-        height: 128
+        width: 94
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -580,19 +694,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 695e1b30b63118149946beba92ea3558
+      spriteID: 11ec5d34763d84f4fae525bf68dac81f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_23
+      name: wonderingworm_sheet_28
       rect:
         serializedVersion: 2
-        x: 256
+        x: 260
         y: 4608
-        width: 128
-        height: 128
+        width: 124
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -600,19 +714,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a228d51da2ae45b48a18c0fa8e5da5b4
+      spriteID: 0c3387c6a7ff7dd4c9d343a6a0f18b24
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_24
+      name: wonderingworm_sheet_29
       rect:
         serializedVersion: 2
-        x: 384
+        x: 393
         y: 4608
-        width: 128
-        height: 128
+        width: 119
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -620,13 +734,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95e879c58406fc046912e77feb3aa560
+      spriteID: 54d45fc4945023242aef1e8e060a868d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_25
+      name: wonderingworm_sheet_30
       rect:
         serializedVersion: 2
         x: 512
@@ -640,13 +754,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adde0326810e276488e924ad7b9f4f37
+      spriteID: 5fed38b902098204fb129572a614aa98
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_26
+      name: wonderingworm_sheet_31
       rect:
         serializedVersion: 2
         x: 640
@@ -660,13 +774,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02eddef7613aa25448d692c8d4944ab8
+      spriteID: e11d464512cb7984fa64143ee4f59a0a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_27
+      name: wonderingworm_sheet_32
       rect:
         serializedVersion: 2
         x: 768
@@ -680,13 +794,73 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50d6a14b9531c524091140fafaf69189
+      spriteID: 09279ec7fb23e56469a9fc4fbc5aa00f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_28
+      name: wonderingworm_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 4608
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01b6309544f0d141a94235009f9185f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wonderingworm_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 4608
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15299e41dedcbd428b5c8e1e6455bb4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wonderingworm_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 4608
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322185ec318bbd345ad51ee366b90c4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wonderingworm_sheet_36
       rect:
         serializedVersion: 2
         x: 256
@@ -700,13 +874,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c466292c23a713e489de368ccbdbbce7
+      spriteID: acd910ea5cfffa242bc5ba96554c403f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_29
+      name: wonderingworm_sheet_37
       rect:
         serializedVersion: 2
         x: 512
@@ -720,13 +894,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07c19642637c7c74d89864d8d7cd78e4
+      spriteID: 5e40bac69d88428468c4cb0f6630b488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wonderingworm_sheet_30
+      name: wonderingworm_sheet_38
       rect:
         serializedVersion: 2
         x: 640
@@ -740,7 +914,127 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 817f053bc96444444a614a87ccbd6faf
+      spriteID: 01034ccfba7eca841aa5ebec547974fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wonderingworm_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 4480
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31ba54258aac8442a0e47e6ad394d66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wonderingworm_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 4480
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7407d2b77058347a03784dfd996388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wonderingworm_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 4480
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759cbc300f3582044ba50ad255406aab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wonderingworm_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 4480
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab09aa6af12d51478601f70611ec91f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wonderingworm_sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 4480
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbf11972ac837747a50f9176e058950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wonderingworm_sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 4352
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eda0f317fa6e864e8ac140a3eaf7f0b
       vertices: []
       indices: 
       edges: []
@@ -748,7 +1042,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ebd3465fb1ac33d4abd0ff6e09a8902c
+    spriteID: e190fe0c5371f6c4a8295b2f4f759b94
     vertices: []
     indices: 
     edges: []
