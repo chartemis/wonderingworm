@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -8,6 +9,7 @@ public class GameManager : MonoBehaviour {
 
 	
     public int Points;
+	public bool GameOver;
 
 
 	// Use this for initialization
@@ -43,5 +45,11 @@ public class GameManager : MonoBehaviour {
 	{
 		// Do any initialization here
 		Points = 0;
+		GameOver = false;
+	}
+
+	public void RestartGame() {
+		SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);		
+		InitGame();
 	}
 }

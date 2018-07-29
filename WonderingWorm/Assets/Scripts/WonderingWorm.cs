@@ -119,9 +119,7 @@ public class WonderingWorm : MovingObject {
 	protected void TriggerLoss(){
 		PauseObject();
 
-
-		// SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
-
+		GameManager.instance.GameOver = true;
 	}
 
 
