@@ -84,12 +84,12 @@ public class WonderingWorm : MovingObject {
                     SmutGrab.Play();
 						break;		
 					case "PickUp":					    
-						EatBook(other.gameObject,10);
+						EatBook(other.gameObject,2);
                         GoodBookGrab.Play();
                     break;			
 					case "Etiquette":					    
 						UpgradeWorm();
-						EatBook(other.gameObject, 5);									
+						EatBook(other.gameObject, 10);									
 						break;			
 			}  
 

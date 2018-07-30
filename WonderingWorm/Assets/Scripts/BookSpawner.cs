@@ -93,8 +93,8 @@ public class BookSpawner : MonoBehaviour {
 	private void SpawnPE () {
         int propetiquettespawn = UnityEngine.Random.Range(0, 10);
 
-        if (propetiquettespawn == 9 & GameManager.instance.gameTimer > 30)
-        {
+        // if (propetiquettespawn == 9 & GameManager.instance.gameTimer > 30)
+        // {
 
             int spawnRadius = 15;
             double spawnPointTheta = UnityEngine.Random.Range(0, 360);
@@ -116,7 +116,7 @@ public class BookSpawner : MonoBehaviour {
             Destroy(spawnedBook, delay); //destroys object after 10 seconds
 
             ProperEtiquetteSpawn.Play();
-        }
+        // }
     }
 
 }

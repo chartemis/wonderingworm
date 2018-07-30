@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour {
 	void InitGame()
 	{
 		// Do any initialization here
-		Points = 20;
+		Points = 0;
 		GameOver = false;
 	}
 
