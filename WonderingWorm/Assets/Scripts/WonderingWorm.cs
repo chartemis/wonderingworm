@@ -11,6 +11,9 @@ public class WonderingWorm : MovingObject {
 	private BoxCollider2D _boxCollider;
     public AudioSource GoodBookGrab;
     public AudioSource SmutGrab;
+    public AudioSource Death;
+    public AudioSource lvl1Song;
+    public AudioSource WormUpgrade;
 	
 	public int PointsToWin;
 	public int Health;
@@ -104,7 +107,9 @@ public class WonderingWorm : MovingObject {
 		Health--;
 
 		if (Health <= 0) {
-			// game over
+            // game over
+            lvl1Song.Stop();
+            Death.Play();
 			TriggerLoss();
 		}
 	}
@@ -115,12 +120,14 @@ public class WonderingWorm : MovingObject {
 				_level++;
 				moveSpeed = Level2Speed;
 				_boxCollider.size = new Vector3(.83f, .92f, 0);
+                WormUpgrade.Play();
 				break;
 			case 2:
 				_level++;
 				moveSpeed = Level3Speed;
 				_boxCollider.size = new Vector3(1.05f, 1.05f, 0);
-				break;
+                WormUpgrade.Play();
+                break;
 		}
 		
 		_animator.SetInteger("Level", _level);
