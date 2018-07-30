@@ -144,13 +144,12 @@ public class WonderingWorm : MovingObject {
 
 	protected void TriggerWin(){
 		PauseObject();
-		SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+		SceneManager.LoadScene("VictoryScreen", LoadSceneMode.Single);
 	}
 
 
 	protected void TriggerLoss(){
 		PauseObject();
-
 		GameManager.instance.GameOver = true;
 	}
 
